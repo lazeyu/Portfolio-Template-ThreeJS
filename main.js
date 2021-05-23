@@ -52,18 +52,22 @@ function addStar() {
 
 Array(400).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load('space2.jpg');
+// const spaceTexture = new THREE.TextureLoader().load('space2.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://i.ibb.co/fv5vPXp/space2.jpg');
 scene.background = spaceTexture;
 
-const rishTexture = new THREE.TextureLoader().load('rishabh.jpg')
+// const rishTexture = new THREE.TextureLoader().load('rishabh.jpg')
+const rishTexture = new THREE.TextureLoader().load('https://i.ibb.co/fktJ4yQ/rishabh.jpg')
 const rish = new THREE.Mesh(
   new THREE.BoxGeometry(3.5, 3.5, 3.5),
   new THREE.MeshBasicMaterial({ map: rishTexture })
 )
 scene.add(rish);
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+// const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://i.ibb.co/SRvWDZD/moon.jpg');
+// const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const normalTexture = new THREE.TextureLoader().load('https://i.ibb.co/mtqKxkP/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
